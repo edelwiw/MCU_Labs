@@ -18,9 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "math.h"
 
-#include <stdlib.h>
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -422,8 +420,6 @@ static void MX_GPIO_Init(void)
 /* USER CODE END MX_GPIO_Init_2 */
 }
 
-int32_t i = 0;
-uint32_t delta = 30;
 /* USER CODE BEGIN 4 */
 void set_control(uint16_t error){ 
   if (abs((int)pow(2, 11) - error) > delta) {
