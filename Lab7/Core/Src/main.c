@@ -379,8 +379,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
   }
 }
 
-void display(uint32_t number)
-{
+void display(uint32_t number){
   char dig[NUM_INDICATORS + 1]; 
   sprintf(dig, "%d", number);
 
